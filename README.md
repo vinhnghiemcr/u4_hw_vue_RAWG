@@ -4,12 +4,11 @@
 </div>
 
 ## Overview
-In this lab, we will be building a frontend website with React, React Router, and the RAWG API: https://rawg.io/apidocs, a must have API for gamers!
-The endpoints we will be using with this API have been provided below. Starter code and component files have also been provided.
-- Make sure to `npm i` after `forking` and `cloning` this repo to install dependencies.
+In this lab, we will be building a frontend website with React, React Router, and the RAWG API. We'll be getting practice with routing dynamically with `react-router-dom` elements and with making API calls with `axios` inside of React Lifecycle Methods.
+- https://rawg.io/apidocs, a must have API for gamers!
+- The endpoints (url strings) we will be using with this API have been provided below. Starter code and component files have also been provided.
 
-## Endpoints
-We'll be using these endpoints for our API calls 
+### Endpoints
 ```js
 [GET] Search `https://api.rawg.io/api/games?search={searchQuery}`
 [GET] Genres `https://api.rawg.io/api/genres`
@@ -19,6 +18,7 @@ We'll be using these endpoints for our API calls
 
 ## Getting Started
 - `Fork` and `clone` this repository 
+- `npm i` to install dependencies
 
 
 

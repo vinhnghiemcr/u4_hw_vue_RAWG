@@ -9,6 +9,7 @@ The endpoints we will be using with this API have been provided below. Starter c
 - Make sure to `npm i` after `forking` and `cloning` this repo to install dependencies.
 
 ## Endpoints
+We'll be using these endpoints for our API calls 
 ```js
 [GET] Search `https://api.rawg.io/api/games?search={searchQuery}`
 [GET] Genres `https://api.rawg.io/api/genres`
@@ -21,7 +22,6 @@ The endpoints we will be using with this API have been provided below. Starter c
 
 
 
-___
 ## Instructions
 ### App Architecture
 Let's take a look at the structure of the app we've just cloned. How are components nested in its file structure? What does this inform us about where we will be using React Router and which components will be called within it when building this app?

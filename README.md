@@ -3,7 +3,7 @@
   <img alt="rawg" src="https://i0.wp.com/operationrainfall.com/wp-content/uploads/2019/06/RAWG-Featured.jpg?fit=1920%2C1080&ssl=1" />
 </div>
 
-## Introduction
+## Overview
 In this lab, we will be building a frontend website with React, React Router, and the RAWG API: https://rawg.io/apidocs, a must have API for gamers!
 The endpoints we will be using with this API have been provided below. Starter code and component files have also been provided.
 - Make sure to `npm i` after `forking` and `cloning` this repo to install dependencies.
@@ -16,7 +16,13 @@ The endpoints we will be using with this API have been provided below. Starter c
 [GET] DLC `https://api.rawg.io/api/games/{gameId}/game-series` (Bonus)
 ```
 
-# Part 1: App Architecture
+## Getting Started
+- `Fork` and `clone` this repository 
+
+
+
+## Instructions
+### App Architecture
 Let's take a look at the structure of the app we've just cloned. How are components nested in its file structure? What does this inform us about where we will be using React Router and which components will be called within it when building this app?
 <p align="center" >
   <img height="400" alt="tree" src="https://res.cloudinary.com/ahonore42/image/upload/v1603983629/Screen_Shot_2020-10-29_at_10.59.18_AM_ah4q0q.png" />
@@ -63,10 +69,10 @@ import { Route, Switch } from 'react-router-dom'
 
 Once finished we've set up the structure of the app! Congrats!
 
-# Part 2: Components
+### Components
 For this section, we will start by building the smallest reusable parts of our app, its components. We will be working in the `components` folder. For now, we are only concerned with the structure of each component, so their props will not be defined to begin with. However, these components will inform how we are going to build out our pages later on.
 
-### Header
+#### Header
 Let's start with the Header, so we can have active navigation between pages.
 - Our Header only requires one import:
 ```js
@@ -75,7 +81,7 @@ import { NavLink } from 'react-router-dom'
 - Within it's nav tag, it will need 2 NavLinks that are links *to* our Home `'/'` Route and our `'/about'` Route.
 - Once these NavLinks are finished, you are done with the Header component!
 
-### Search
+#### Search
 Next, let's build out the Search component. This component will be used for searching our API later on.
 - The Search component does not require any additional imports, but it does have access to props, which will be important later on. It's available props will be:
 ```js
@@ -87,7 +93,7 @@ props.onSubmit, props.onChange, props.value
 - It's button should be a type of `"submit"`
 - It's form should have access to `props.onSubmit` within its own onSubmit attribute
 
-### GameCard
+#### GameCard
 Now, we will build out the structure for our GameCard. This component will be used to display and allow users to click on games on our Home and ViewGames pages.
 - GameCard will have access to 4 props: 
 ```js
@@ -97,7 +103,7 @@ props.onClick, props.image, props.name, props.rating
 - Within its `'img-wrapper'` div, it will need an img tag with a src of props.image. Don't forget to give it an alt!
 - Lastly, its `'game-card'` div should have an onClick with access top props.Onclick
 
-### GenreCard
+#### GenreCard
 The GenreCard will be used to display a card for each genre within our Home page.
 - GenreCard will have access to 4 props:
 ```js
@@ -109,13 +115,13 @@ props.image, props.name, props.gamesCount, and props.onClick
 
 With that, we've finished the basic structor for our components!
 
-# Part 3: Home and About Pages and Methods
+## Home and About Pages and Methods
 Now that we've finished the basic structure of our app's reusable components, let's build out the pages! Each page is unique, so we will look at each one individually. We will start with the least complex page structure and work our way up. In this section you will be working with the files inside of the `pages` folder in your app.
 
-### About Page
+#### About Page
 The about page is typically the simplest page in an app. For our purposes, all we need with this page is an h1 tag inside the main div in `About.js` denoting that it is in fact, the about page. More information can be added later on. No Imports are required with this page. The Route for this page in `App.js` should be `/about`.
 
-### Home Page
+#### Home Page
 Let's move on to the Home page. It's route should be `'/'` in `App.js`
 - In `Home.js` we need 4 additional imports: `Search, Axios, GameCard, and GenreCard`
 - Notice the state variables within the state object for Home. What do these variables imply for our page?
@@ -131,7 +137,7 @@ In the render we will:
 - Conditionally render search results as GameCard components in the search-results div.
 - Render all genres within the genres container-grid as GenreCards
 
-# Part4: GameDetails and ViewGames Pages
+### GameDetails and ViewGames Pages
 We will be building out these pages as a code-along in class.
 
 GameDetails will display specific information for an individual game.
@@ -142,4 +148,7 @@ ViewGames will display a page with up to 40 games.
 - ViewGames requires Axios, GameCard, and this url: `https://api.rawg.io/api/games?page_size=40&genres=${this.state.genreId}`
 - Its Route path is: `/view/games/:genreId`
 
+## Recap
 
+
+## Resources

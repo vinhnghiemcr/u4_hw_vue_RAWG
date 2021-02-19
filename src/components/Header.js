@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react';
 
-const Header = () => (
-  <header>
-    <nav>
+export default class Header extends Component {
+  render() {
+    return (
+      <header>
+        <nav>
 
-    </nav>
-  </header>
-)
-
-export default Header
+        </nav>
+      </header>
+    );
+  }
+}

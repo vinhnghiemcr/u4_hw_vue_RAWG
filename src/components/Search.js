@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react';
 
-const Search = (props) => (
-  <form >
+export default class Search extends Component {
+  render() {
+    return (
+      <form>
 
-  </form>
-)
-
-export default Search
+      </form>
+    );
+  }
+}

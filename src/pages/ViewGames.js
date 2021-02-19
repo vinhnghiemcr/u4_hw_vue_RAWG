@@ -23,6 +23,6 @@ export default class ViewGames extends Component {
       <div className="container-grid">
         
       </div>
-    )
+    );
   }
 }

@@ -48,6 +48,6 @@ export default class Home extends Component {
           </section>
         </div>
       </div>
-    )
+    );
   }
 }

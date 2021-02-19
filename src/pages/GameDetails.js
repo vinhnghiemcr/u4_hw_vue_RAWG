@@ -39,6 +39,6 @@ export default class GameDetails extends Component {
           </div>
         </section>
       </div>
-    )
+    );
   }
 }

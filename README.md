@@ -21,6 +21,7 @@ The endpoints we will be using with this API have been provided below. Starter c
 
 
 
+___
 ## Instructions
 ### App Architecture
 Let's take a look at the structure of the app we've just cloned. How are components nested in its file structure? What does this inform us about where we will be using React Router and which components will be called within it when building this app?
@@ -69,6 +70,7 @@ import { Route, Switch } from 'react-router-dom'
 
 Once finished we've set up the structure of the app! Congrats!
 
+___
 ### Components
 For this section, we will start by building the smallest reusable parts of our app, its components. We will be working in the `components` folder. For now, we are only concerned with the structure of each component, so their props will not be defined to begin with. However, these components will inform how we are going to build out our pages later on.
 
@@ -115,7 +117,8 @@ props.image, props.name, props.gamesCount, and props.onClick
 
 With that, we've finished the basic structor for our components!
 
-## Home and About Pages and Methods
+___
+### Home and About Pages and Methods
 Now that we've finished the basic structure of our app's reusable components, let's build out the pages! Each page is unique, so we will look at each one individually. We will start with the least complex page structure and work our way up. In this section you will be working with the files inside of the `pages` folder in your app.
 
 #### About Page
@@ -137,6 +140,7 @@ In the render we will:
 - Conditionally render search results as GameCard components in the search-results div.
 - Render all genres within the genres container-grid as GenreCards
 
+___
 ### GameDetails and ViewGames Pages
 We will be building out these pages as a code-along in class.
 

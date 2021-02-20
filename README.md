@@ -29,8 +29,7 @@ Let's take a look at the structure of the app we've just cloned. How are compone
   <img height="400" alt="tree" src="https://res.cloudinary.com/ahonore42/image/upload/v1603983629/Screen_Shot_2020-10-29_at_10.59.18_AM_ah4q0q.png" />
 </p>
 
-Let's start with `index.js`, followed by `App.js`. 
-- In `index.js` we need one additional import:
+Let's start with `index.js`, followed by `App.js`. In `index.js` we'll need one additional import:
 ```js
 import { BrowserRouter } from 'react-router-dom'
 ```
@@ -47,22 +46,16 @@ ReactDOM.render(
 ```
 
 #### App.js
-Let's move on to `App.js`.
-- In `App.js` what we want is a `<Header />` that will be displayed at all times at the top of our website along with a section where our `<main>` content will be displayed
-- You will need to import 5 components into `App.js`, the first of which should be our `<Header />`. 
-- We also want to be able to control navigation between all pages and display the Home page.
-
-
-
+Let's move on to `App.js`. In `App.js` what we want is a `<Header />` that will be displayed at all times at the top of our website along with a section where our `<main>` content will be displayed
+- You will need to import 5 components into `App.js`, the first of which should be our `<Header />`, which we'll use to control navigation between all pages.
 - Each one of these components should be accessible with a Route, with a path for each Route inside of our Switch.
-- One Route should have an *exact path*, so it is displayed when the app is first rendered. Here is the skeleton of how this app should be structured
-- To accomplish this, first we need to:
+- At least one `<Route />` should have an *exact path*, so it is displayed when the app is first rendered. Here is the skeleton of how this app should be structured in `App.js`:
+
 ```js 
 import { Route, Switch } from 'react-router-dom'
-import Header from
-```
+import Header from './components/Header';
+// Other component imports here
 
-```js
 <div className="App">
       <Header />
       <main>
@@ -75,7 +68,7 @@ import Header from
       </main>
     </div>
 ```
-- Add the proper component for each Route within the Switch. Each Route should have a path denoting specific url patterns to render each component.
+- Add the proper component and import for each `<Route />` within the `<Switch />` as you work through this lab. Each Route should have a path denoting specific URL patterns to render each component.
 
 Once finished we've set up the structure of the app! Congrats!
 

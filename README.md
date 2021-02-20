@@ -77,64 +77,69 @@ ___
 For this section, we will start by building the smallest reusable parts of our app, its components. We will be working in the `components` folder. For now, we are only concerned with the structure of each component, so their props will not be defined to begin with. However, these components will inform how we are going to build out our pages later on.
 
 #### Header
-Let's start with the Header, so we can have active navigation between pages.
-- Our Header only requires one import:
+Let's start with the Header, so we can have active navigation between pages. Our Header only requires one import:
 ```js
 import { NavLink } from 'react-router-dom'
 ```
-- Within it's nav tag, it will need 2 NavLinks that are links *to* our Home `'/'` Route and our `'/about'` Route.
+- Within it's `<nav/>` tag, it will need 2 `<NavLinks />` that are links *to* our Home `'/'` Route and our `'/about'` Route.
 - Once these NavLinks are finished, you are done with the Header component!
 
 #### Search
-Next, let's build out the Search component. This component will be used for searching our API later on.
-- The Search component does not require any additional imports, but it does have access to props, which will be important later on. It's available props will be:
+Next, let's build out the Search component. This component will be used for searching our API later on. The Search component does not require any additional imports, but it does have access to props, which will be important later on. It's available props will be:
 ```js
 this.props.onSubmit, this.props.onChange, this.props.value
 ```
 - Notice that the Search component is a *form*
 - To build out Search properly, we need an input and a submit button
-- The input in Search should have these attributes: `type="text", name="search", value={this.props.value}, placeholder="Search Games", onChange={this.props.onChange}`
-- It's button should be a type of `"submit"`
-- It's form should have access to `this.props.onSubmit` within its own onSubmit attribute
+- The input in Search should have these attributes: 
+
+<input
+ type="text" 
+ name="search" 
+ value={this.props.value} 
+ placeholder="Search Games" 
+ onChange={this.props.onChange}
+
+- Its `<button />` should have a type of `"submit"`
+- Its `<form />` should have access to `this.props.onSubmit` within its own `onSubmit` attribute
 
 #### GameCard
-Now, we will build out the structure for our GameCard. This component will be used to display and allow users to click on games on our Home and ViewGames pages.
-- GameCard will have access to 4 props: 
+Now, we will build out the structure for our GameCard. This component will be used to display and allow users to click on games on our Home and ViewGames pages. GameCard will have access to 4 props: 
 ```js
 this.props.onClick, this.props.image, this.props.name, this.props.rating
 ```
-- Inside its `'info-wrapper'` div, it will need an h3 tag displaying props.name, and a p tag displaying props.rating
-- Within its `'img-wrapper'` div, it will need an img tag with a src of props.image. Don't forget to give it an alt!
-- Lastly, its `'game-card'` div should have an onClick with access top props.Onclick
+- Inside its `'info-wrapper'` div, it will need an h3 tag displaying `this.props.name`, and a p tag displaying `this.props.rating`
+- Within its `'img-wrapper'` div, it will need an img tag with a src of `this.props.image`. Don't forget to give it an alt!
+- Lastly, its `'game-card'` div should have an `onClick` with access to `this.props.onClick`
 
 #### GenreCard
-The GenreCard will be used to display a card for each genre within our Home page.
-- GenreCard will have access to 4 props:
+The GenreCard will be used to display a card for each genre _within_ our `Home` page. GenreCard will have access to 4 props:
 ```js
 this.props.image, this.props.name, this.props.gamesCount, and this.props.onClick
 ```
-- Its `'card'` div should have an onClick with access to props.onClick
-- Its `'img-wrapper'` div should have an img with a src of props.image
-- Its `'info-wrapper'` div should have an h3 tag displaying props.name and a p tag displaying props.gamesCount
+- Its `'card'` div should have an `onClick` with access to `this.props.onClick`
+- Its `'img-wrapper'` div should have an img with a src of `this.props.image`
+- Its `'info-wrapper'` div should have an h3 tag displaying `this.props.name` and a p tag displaying `this.props.gamesCount`
 
-With that, we've finished the basic structor for our components!
+With that, we've finished the basic structure of our components!
 
 ___
 ### Home and About Pages and Methods
 Now that we've finished the basic structure of our app's reusable components, let's build out the pages! Each page is unique, so we will look at each one individually. We will start with the least complex page structure and work our way up. In this section you will be working with the files inside of the `pages` folder in your app.
 
 #### About Page
-The about page is typically the simplest page in an app. For our purposes, all we need with this page is an h1 tag inside the main div in `About.js` denoting that it is in fact, the about page. More information can be added later on. No Imports are required with this page. The Route for this page in `App.js` should be `/about`.
+The about page is typically the simplest page in an app. For our purposes, all we need with this page is an h1 tag inside the main div in `About.js` denoting that it is in fact, the about page. More information can be added later on. No Imports are required with this page. The path for the `<Route />` for this page in `App.js` should be `/about`.
 
 #### Home Page
 Let's move on to the Home page. It's route should be `'/'` in `App.js`
 
-In `Home.js` we need 4 additional imports: `Search, Axios, GameCard, and GenreCard`
+In `Home.js` we need 4 additional imports: `Search, Axios, GameCard, and GenreCard`. Make sure you're importing properly with IntelliSense, React will scream at you otherwise.
 
-Notice the state variables within the state object for Home. What do these variables imply for our page?
+Notice the state variables within the `state` object for `Home`. What do these variables imply for our page?
 - `Home.js` will need 3 methods and an instance of `componentDidMount()` to fire one of its 3 methods, which will access our API when the component is mounted.
 - The URLs we will be working with here are `https://api.rawg.io/api/genres` and `https://api.rawg.io/api/games?search={searchQuery}`
-- Its methods are as follows: 
+
+The methods we'll be creating within our `Home` component below its `constructor()` are: 
 ```js
   getGenres(), getSearchResults, handleChange()
 ```
@@ -142,9 +147,10 @@ Notice the state variables within the state object for Home. What do these varia
 - `getSearchResults()` will set the state of our searchResults, set searched to true, and set the searchQuery back to an empty string.
 - `handleChange()` will set the state of our searchQuery
 
-In the render we will:
-- Render the Search component at the top of the page
+In the `render()` we will:
+- Render the `<Search />` component at the top of the page
 - Conditionally render search results as GameCard components in the search-results div.
+> HINT: only render them if we get a response from our API call from search
 - Render all genres within the genres container-grid as GenreCards
 
 ___
@@ -152,7 +158,7 @@ ___
 We will be building out these pages as a code-along in class.
 
 GameDetails will display specific information for an individual game.
-- GameDetails requires Axios and this url: `https://api.rawg.io/api/games/${this.state.gameId}`
+- GameDetails requires Axios and this URL: `https://api.rawg.io/api/games/${this.state.gameId}`
 - It's Route path is: `/games/details/:gameId`
 
 ViewGames will display a page with up to 40 games.

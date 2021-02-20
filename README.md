@@ -4,9 +4,9 @@
 </div>
 
 ## Overview
-In this lab, we will be building a frontend website with React, React Router, and the RAWG API. We'll be getting practice with routing dynamically with `react-router-dom` elements and with making API calls with `axios` inside of React Lifecycle Methods.
+In this lab, we will be building a frontend website with React, React Router, and the RAWG API. We'll be getting practice with routing dynamically with `react-router-dom` elements and with making API calls with `axios` inside of React Lifecycle Methods. Try to think of this lab like a puzzle, where you'll be adding in the pieces we need to create a functioning game website.
 - https://rawg.io/apidocs, a must have API for gamers!
-- The endpoints (url strings) we will be using with this API have been provided below. Starter code and component files have also been provided.
+- The endpoints (URL strings) we will be using with this API have been provided below. Starter code and component files have also been provided.
 
 ### Endpoints
 ```js

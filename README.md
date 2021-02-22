@@ -4,7 +4,7 @@
 </div>
 
 ## Overview
-In this lab, we will be building a frontend website with React, React Router, and the RAWG API. We'll be getting practice with routing dynamically with `react-router-dom` elements and with making API calls with `axios` inside of React Lifecycle Methods. Try to think of this lab like a puzzle, where you'll be adding in the pieces we need to create a functioning game website.
+We will be building a frontend website with React, React Router, and the RAWG API. We'll be getting practice with routing dynamically with `react-router-dom` elements and with making API calls with `axios` inside of React Lifecycle Methods. Try to think of this lab like a puzzle, where you'll be adding in the pieces we need to create a functioning game website.
 - https://rawg.io/apidocs, a must have API for gamers!
 - The endpoints (URL strings) we will be using with this API have been provided below. Starter code and component files have also been provided.
 
@@ -165,11 +165,9 @@ ViewGames will display a page with up to 40 games.
 - ViewGames requires Axios, GameCard, and this url: `https://api.rawg.io/api/games?page_size=40&genres=${this.state.genreId}`
 - Its Route path is: `/view/games/:genreId`
 
-## Recap
-In this lab we built a video game application utilizing the `RAWG` API through `axios` calls within Lifecycle Methods like `componentDidMount` and built dynamically rendered pages with navigation through 'react-router-dom' elements. Important concepts we reviewed include:
-- Using URL params to create dynamic `<Route />`s for specific components rendered from large `mapped` datasets
-- Creating methods within our components that make API calls with `axios` and store the data in `state`
-- Establishing proper application architecture, with site navigation separate from `<main>` content delivered through `<Route />`s
+## Submission
+
+- Pull request utilizing this template: [Pr Template](https://github.com/SEI-R-1-25/template_pull_request)
 
 ## Resources
 - [React with APIs Lesson](https://github.com/SEI-R-1-25/u2_lesson_react_with_apis)

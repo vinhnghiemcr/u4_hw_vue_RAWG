@@ -167,9 +167,9 @@ ViewGames will display a page with up to 40 games.
 
 ## Submission
 
-- Pull request utilizing this template: [Pr Template](https://github.com/SEI-R-1-25/template_pull_request)
+- Pull request utilizing this template: [PR Guidelines](https://github.com/SEI-R-4-26/template_pull_request)
 
 ## Resources
-- [React with APIs Lesson](https://github.com/SEI-R-1-25/u2_lesson_react_with_apis)
-- [React Router Lesson](https://github.com/SEI-R-1-25/u2_lesson_react_router)
-- [React Lifecycle Methods Lesson](https://github.com/SEI-R-1-25/u2_lesson_react_lifecycle)
+- [React with APIs Lesson](https://github.com/SEI-R-4-26/u2_lesson_react_APIs)
+- [React Router Lesson](https://github.com/SEI-R-4-26/u2_lesson_react_router)
+- [React Lifecycle Methods Lesson](https://github.com/SEI-R-4-26/u2_lesson_react_lifecycle)

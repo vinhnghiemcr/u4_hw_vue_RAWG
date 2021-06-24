@@ -148,3 +148,16 @@ Next we'll want to select a game and view the game details.
   - **Hint: `this.$router.someMethodThatNavigates` may be useful here.**
 
 ## Step 8: View Game Details
+
+Once you've navigated to the `GameDetails` component, you can now start wiring the component to display some information.
+
+- Utilize the `getGameDetails` method to make a request to retrieve the game information by the game id.
+- Look at the props currently stored in the `Vue Devtools`. Utilize that to retrieve the `gameId` and provide it to the request.
+- The `getGameDetails` method should be triggered once a component mounts.
+
+Some `JSX` has been provided for you. You'll have creative freedom on what information to display here. The only requirements are the component must display:
+
+- The cover image for the game
+- Title of the game
+
+**Bonus: Add a back button that allows you to go back to the home page.**

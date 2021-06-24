@@ -4,7 +4,7 @@
       <!-- Image Goes Here -->
     </div>
     <div class="info-wrapper flex-col">
-      <!-- Genre Name Goes Here -->
+      <!-- Game Name Goes Here -->
     </div>
   </div>
 </template>

@@ -125,7 +125,7 @@ In `Home.vue`, you've been provided with a few methods and some initial state, i
 In `Home.vue` set up a form within the provided `search` classed tag. It should be displayed above the provided `h2`. This form should have an input and a button.
 
 - The value of the input should be `searchQuery`
-- `handlChange` should be used to update the `searchQuery` state
+- `handleChange` should be used to update the `searchQuery` state
 - The `@submit` event should fire the `getSearchResults` method which in turn should update the `searchResults` array.
 - The `searched` state should be updated to `true` once the results are retrieved. If the the state is true, conditionally render the provided `div` with class of `genres` to be hidden. **The `!` operator may be useful here.**
 

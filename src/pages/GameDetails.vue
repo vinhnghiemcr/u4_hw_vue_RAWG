@@ -18,11 +18,11 @@ export default {
   data: () => ({
     gameDetails: null
   }),
-  mounted() {
-    // Get game id from router here
-  },
+  mounted() {},
   methods: {
-    async getGameDetails() {}
+    async getGameDetails() {
+      // Get game id from router here
+    }
   }
 }
 </script>

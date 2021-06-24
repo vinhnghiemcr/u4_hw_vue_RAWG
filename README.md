@@ -1,4 +1,4 @@
-# RAWG Router (APIs with React Router) Lab
+# RAWG Router
 
 <div>
   <img alt="rawg" src="https://i0.wp.com/operationrainfall.com/wp-content/uploads/2019/06/RAWG-Featured.jpg?fit=1920%2C1080&ssl=1" />
@@ -6,9 +6,9 @@
 
 ## Overview
 
-We will be building a frontend website with React, React Router, and the RAWG API. We'll be getting practice with routing dynamically with `react-router-dom` elements and with making API calls with `axios` inside of React Lifecycle Methods. Try to think of this lab like a puzzle, where you'll be adding in the pieces we need to create a functioning game website.
+We will be building a frontend website with Vue, Vue Router, and the RAWG API. We'll be getting practice with routing dynamically with `vue-router` elements and with making API calls with `axios` inside of Vue Lifecycle Methods. Try to think of this lab like a puzzle, where you'll be adding in the pieces we need to create a functioning website.
 
-- https://rawg.io/apidocs, a must have API for gamers!
+- [Api Documentation](https://api.rawg.io/docs/)
 - The endpoints (URL strings) we will be using with this API have been provided below. Starter code and component files have also been provided.
 
 ## Retrieving An Api Key

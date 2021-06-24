@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="search">
+      <!-- Search Form Goes Here -->
       <h2>Search Results</h2>
       <section class="search-results container-grid"></section>
     </div>

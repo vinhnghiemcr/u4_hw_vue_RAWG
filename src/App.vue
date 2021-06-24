@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <header>
+      <!-- Nav Goes Here -->
       <Nav />
     </header>
     <main>
+      <!-- Router View Goes Here -->
       <router-view />
     </main>
   </div>

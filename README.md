@@ -138,4 +138,13 @@ Now that we have the search results in state, you'll want to bring in the `GameC
 - Display these props in the noted sections within `GameCard`.
 - Don't forget to declare which props it will be recieving.
 
-## Step 7: Viewing Game Details
+## Step 7: Navigation To Game Details
+
+Next we'll want to select a game and view the game details.
+
+- Attach an `@click` event to the `GenreCard` component, it should trigger the `selectGame` method.
+  - **Hint: You can invoke the method to provide the `gameId` during the `@click` event.**
+- The `selectGame` method should navigate you to `/details/:game_id`. The `game_id` parameter gets replaced with the provided `gameId` argument.
+  - **Hint: `this.$router.someMethodThatNavigates` may be useful here.**
+
+## Step 8: View Game Details

@@ -30,6 +30,9 @@ export default {
     },
     handleChange(event) {
       console.log(event)
+    },
+    selectGame(gameId) {
+      console.log(gameId)
     }
   }
 }

@@ -34,7 +34,7 @@ Head over to this link [Here](https://rawg.io/apidocs) to get your own api key. 
 Let's take a look at the structure of the app we've just cloned. You've been provided with all of the components you'll need to complete this exercise.
 
 <p align="center" >
-  <img height="400" alt="tree" src="images/folders.png" />
+  <img height="400" alt="tree" src="https://sei-r.s3.amazonaws.com/u4_lab_vue_rawg_router/folders.png" />
 </p>
 
 **Note: The app will show an error until `Step 2` is complete.**

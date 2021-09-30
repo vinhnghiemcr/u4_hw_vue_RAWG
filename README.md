@@ -160,4 +160,11 @@ Some `JSX` has been provided for you. You'll have creative freedom on what infor
 - The cover image for the game
 - Title of the game
 
-**Bonus: Add a back button that allows you to go back to the home page.**
+Add a back button that allows you to go back to the home page.
+
+## Bonus
+
+Display a list of the game's most recent posts from its subreddit page in the `GameDetails` component.
+
+Create two pages for `ViewPlatforms` and `PlatformDetails` to display the platform information available through the API.
+- **Hint: This will likely require more components as well**

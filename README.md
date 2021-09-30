@@ -144,7 +144,7 @@ Next we'll want to select a game and view the game details.
 
 - Attach an `@click` event to the `GameCard` component, it should trigger the `selectGame` method.
   - **Hint: You can invoke the method to provide the `gameId` during the `@click` event.**
-- The `selectGame` method should navigate you to `/details/:game_id`. The `game_id` parameter gets replaced with the provided `gameId` argument.
+- The `selectGame` method should navigate you to `/detail/:game_id`. The `game_id` parameter gets replaced with the provided `gameId` argument.
   - **Hint: `this.$router.someMethodThatNavigates` may be useful here.**
 
 ## Step 8: View Game Details
@@ -168,3 +168,19 @@ Display a list of the game's most recent posts from its subreddit page in the `G
 
 Create two pages for `ViewPlatforms` and `PlatformDetails` to display the platform information available through the API.
 - **Hint: This will likely require more components as well**
+
+## Homework
+
+For completion you must have:
+
+- all parts of the lab completed **excluding** the bonus. (Steps 1-8)
+- Make the genres clickable, this should navigate you to a new page where it displays a list of games by that genre. (Hint: This will require a new route and axios call).
+- this page should display each game and it's rating prominently and users should have the ability to sort games by rating.
+  - You should have a dropdown to sort the games either in descending or ascending order.
+- this page must be professionally styled and match the theme of the current application
+
+The api endpoint should resemble the following: `https://api.rawg.io/api/games?genres=<genre id>&key=<your key>`
+
+### Bonus
+
+Build the ability to paginate results for this page.

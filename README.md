@@ -173,7 +173,7 @@ Create two pages for `ViewPlatforms` and `PlatformDetails` to display the platfo
 
 For completion you must have:
 
-- all parts of the lab completed **excluding** the bonus. (Steps 1-8)
+- all parts of the lab completed **not including** the bonus. (Steps 1-8)
 - Make the genres clickable, this should navigate you to a new page where it displays a list of games by that genre. (Hint: This will require a new route and axios call).
 - this page should display each game and it's rating prominently and users should have the ability to sort games by rating.
   - You should have a dropdown to sort the games either in descending or ascending order.

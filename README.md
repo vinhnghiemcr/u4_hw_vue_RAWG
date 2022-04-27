@@ -1,4 +1,4 @@
-# RAWG Router
+# Vue RAWG Router
 
 <div>
   <img alt="rawg" src="https://i0.wp.com/operationrainfall.com/wp-content/uploads/2019/06/RAWG-Featured.jpg?fit=1920%2C1080&ssl=1" />

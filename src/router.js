@@ -1,9 +1,14 @@
-import VueRouter from 'vue-router'
-import Home from './pages/Home'
+import { createWebHistory, createRouter } from "vue-router"
+import HomePage from './pages/HomePage'
 import GameDetails from './pages/GameDetails'
 import ViewGames from './pages/ViewGames'
-import About from './pages/About'
+import AboutPage from './pages/AboutPage'
 
 const routes = []
 
-export default new VueRouter({ routes, mode: 'history' })
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+})
+
+export default router

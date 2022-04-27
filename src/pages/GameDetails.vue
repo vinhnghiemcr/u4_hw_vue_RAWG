@@ -13,16 +13,16 @@
 </template>
 
 <script>
-export default {
-  name: 'GameDetails',
-  data: () => ({
-    gameDetails: null
-  }),
-  mounted() {},
-  methods: {
-    async getGameDetails() {
-      // Get game id from router here
+  export default {
+    name: 'GameDetails',
+    data: () => ({
+      gameDetails: null
+    }),
+    mounted() {},
+    methods: {
+      async getGameDetails() {
+        // Get game id from router here
+      }
     }
   }
-}
 </script>

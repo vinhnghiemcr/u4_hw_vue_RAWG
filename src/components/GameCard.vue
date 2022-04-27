@@ -10,7 +10,7 @@
 </template>
 
 <script>
-export default {
-  name: 'GameCard'
-}
+  export default {
+    name: 'GameCard'
+  }
 </script>

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-export default {
-  name: 'GenreCard'
-}
+  export default {
+    name: 'GenreCard'
+  }
 </script>

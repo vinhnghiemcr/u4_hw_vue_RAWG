@@ -8,20 +8,20 @@
 
 We will be building a frontend website with Vue, Vue Router, and the RAWG API. We'll be getting practice with routing dynamically with `vue-router` elements and with making API calls with `axios` inside of Vue Lifecycle Methods. Try to think of this lab like a puzzle, where you'll be adding in the pieces we need to create a functioning website.
 
-- [Api Documentation](https://api.rawg.io/docs/)
+- [API Documentation](https://api.rawg.io/docs/)
 - The endpoints (URL strings) we will be using with this API have been provided below. Starter code and component files have also been provided.
 
-## Retrieving An Api Key
+## Retrieving An API Key
 
-Head over to this link [Here](https://rawg.io/apidocs) to get your own api key. You'll want to add this api key to a `.env` and add the `.env` file to your `.gitignore`
+Head over to this link [Here](https://rawg.io/apidocs) to get your own API key. You'll want to add this API key to a `.env` and add the `.env` file to your `.gitignore`.
 
 ### Endpoints
 
 ```js
-[GET] Search `https://api.rawg.io/api/games?search={searchQuery}&key=YourApiKey`
-[GET] Genres `https://api.rawg.io/api/genres?key=YourApiKey`
-[GET] Game Details `https://api.rawg.io/api/games/{gameId}?key=YourApiKey`
-[GET] DLC `https://api.rawg.io/api/games/{gameId}/game-series?key=YourApiKey` (Bonus)
+[GET] Search `https://api.rawg.io/api/games?key=${API_KEY}&search=${searchQuery}`
+[GET] Genres `https://api.rawg.io/api/genres?key=${API_KEY}`
+[GET] Game Details `https://api.rawg.io/api/games/${gameId}?key=${API_KEY}`
+[GET] DLC `https://api.rawg.io/api/games/${gameId}/additions?key=${API_KEY}` (Bonus)
 ```
 
 ## Getting Started
